@@ -1,6 +1,9 @@
 TITLE
 
-
+; Name: Tanver Alam
+; ID: 110014918
+; Date: Feb 2nd, 2026
+; Description: Assignment 1, Question 3
 
 INCLUDE Irvine32.inc
 INCLUDELIB Irvine32.lib
