@@ -1,6 +1,6 @@
 TITLE 
 
-; Name: Tanver Alam
+; Name: 
 ; ID: 110014918
 ; Date: Feb 2nd, 2026
 ; Description: Assignment 1, Question 1
