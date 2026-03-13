@@ -1,9 +1,9 @@
 TITLE
 
 ; Name: 
-; ID: 110014918
-; Date: Mar 2nd, 2026
-; Description: Assignment 3
+; ID: 110014919
+; Date: May 15th, 2027
+; Description: Test code
 
 INCLUDE Irvine32.inc
 INCLUDELIB Irvine32.lib
@@ -14,11 +14,10 @@ INCLUDELIB user32.lib
                  
 .code
 main PROC
-	call DumpRegs
-	push 32
-	call DumpRegs
+	
 
-	ret
+	exit
+	call DumpRegs
 main ENDP
 END main
 ; ./run.sh Ass3
