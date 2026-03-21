@@ -1,9 +1,9 @@
 TITLE
 
 ; Name: 
-; ID: 110014919
-; Date: May 15th, 2027
-; Description: Test code
+; ID: 
+; Date: 
+; Description: 
 
 INCLUDE Irvine32.inc
 INCLUDELIB Irvine32.lib
