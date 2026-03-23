@@ -28,6 +28,7 @@ main PROC
     
     mov edx, OFFSET Prompt2
     call WriteString
+	mov eax, Integer_N
     call WriteDec
 
 	mov edx, OFFSET Prompt3

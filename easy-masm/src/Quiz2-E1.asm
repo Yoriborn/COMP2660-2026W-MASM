@@ -23,6 +23,14 @@ INCLUDELIB user32.lib
     Prompt_C BYTE "Enter value for C: ", 0
     Prompt_D BYTE "Enter value for D: ", 0
 
+    ; mul = unsigned multiplication.
+        ; imul = signed multiplication.
+
+    ; div = unsigned division.
+        ; idiv = signed division.
+
+    ; cwd = sign extension for division, extends 16-bits to 32-bits.
+
 .code
 main PROC
 ; [STEP 1]: Get values A to D / AX to DX.
@@ -60,9 +68,9 @@ main PROC
 ; [STEP 3]: Calculate (C % D).
     mov AX, Var_C
     mov CX, Var_D
-    mov DX, 0
+    cwd             
     
-    div CX      
+    idiv CX      
     mov CX, DX  ; CX Stores the result.
 
     cmp CX, 0
@@ -74,9 +82,9 @@ Defined:
     call Expression
 
     mov AX, BX
-    mov DX, 0
+    cwd             
     
-    div CX
+    idiv CX
     mov RX, AX ; RX Stores the result.
 
     call Result
@@ -125,7 +133,7 @@ Expression PROC
                 mov al, 20h         ; ASCII for " "
                 call WriteChar
 
-                    mov al, 2Ah     ; ASCII for " + "
+                    mov al, 2Ah     ; ASCII for " * "
                     call WriteChar
 
                 mov al, 20h         ; ASCII for " "
