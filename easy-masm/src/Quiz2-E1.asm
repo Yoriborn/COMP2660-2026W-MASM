@@ -128,7 +128,7 @@ Expression PROC
         call WriteChar
 
             movsx eax, Var_A    
-            call WriteDec
+            call WriteInt
 
                 mov al, 20h         ; ASCII for " "
                 call WriteChar
@@ -140,7 +140,7 @@ Expression PROC
                 call WriteChar
 
             movsx eax, Var_B
-            call WriteDec
+            call WriteInt
 
         mov al, 29h     ; ASCII for " ) "
         call WriteChar
@@ -152,7 +152,7 @@ Expression PROC
         call WriteChar
 
             movsx eax, Var_C
-            call WriteDec
+            call WriteInt
 
                 mov al, 20h         ; ASCII for " "
                 call WriteChar
@@ -164,7 +164,7 @@ Expression PROC
                 call WriteChar
 
             movsx eax, Var_D
-            call WriteDec
+            call WriteInt
             
         mov al, 29h     ; ASCII for " ) "
         call WriteChar
